@@ -3,11 +3,15 @@
 Kotlin Multiplatform + Compose Multiplatform のサンプル TODO アプリ。
 画面・ViewModel・ロジックはすべて `composeApp/src/commonMain` に書かれていて、Android と iOS で同じ UI が動く。
 
+| iOS | Android |
+|:---:|:---:|
+| <img src="docs/screenshots/ios.png" width="280" alt="iOS のスクリーンショット"> | <img src="docs/screenshots/android.png" width="280" alt="Android のスクリーンショット"> |
+
 ## 構成
 
 ```
 composeApp/
-  src/commonMain/   共通コード (App, TodoScreen, TodoViewModel)
+  src/commonMain/   共通コード (App, Theme, TodoScreen, TodoViewModel)
   src/androidMain/  Android 固有 (MainActivity, platformName の actual)
   src/iosMain/      iOS 固有 (MainViewController, platformName の actual)
   src/commonTest/   共通テスト
